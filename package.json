@@ -1,0 +1,23 @@
+{
+  "name": "dogtipbot",
+  "version": "0.0.1",
+  "description": "this is a irc bot and it likes doge",
+  "main": "bot.js",
+  "dependencies": {
+    "irc": "^0.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romnempire/DogTipBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romnempire/DogTipBot/issues"
+  },
+  "homepage": "https://github.com/romnempire/DogTipBot"
+}
