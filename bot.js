@@ -5,8 +5,8 @@ var config = {
 };
 
 var options = {
-	host: 'hatch02.cs.unc.edu';
-	path: '/hatch/run.php?v=';
+	host: 'hatch02.cs.unc.edu',
+	path: '/hatch/run.php?v='
 }
 
 var irc = require('irc');
@@ -37,7 +37,7 @@ bot.addListener("message", function(from,to,text,msg) {
 		bot.say(config.channels[0], "The _real_ topic is Dogecoin");
 	}
 
-	if (text.indexOf("playaudio: " > -1)) {
+	if (text.indexOf("playaudio: ") > -1) {
 		bot.say(config.channels[0], "Playing Audio");
 		options.path = '/hatch/run.php?v=' + text.substring(11);
 		http.request(options, callback).end();
